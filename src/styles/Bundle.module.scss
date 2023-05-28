@@ -1,0 +1,117 @@
+@import "./variable.scss";
+@import "./breakpoints.scss";
+
+.container {
+  position: relative;
+  z-index: 500;
+  background-color: #fff;
+  padding-bottom: 40px;
+  .main {
+    background-color: $bg-secondary;
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 120px;
+    .img_container {
+      position: relative;
+      width: 500px;
+      height: 300px;
+    }
+    .img_container2 {
+      position: relative;
+      width: 480px;
+      height: 400px;
+    }
+    .textContainer {
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 20px;
+    }
+    .mainTitle {
+      font-size: 38px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .text {
+      font-size: 38px;
+      font-weight: bold;
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
+    }
+    button {
+      background-color: #000;
+      color: #fff;
+      font-weight: 500;
+      padding: 12px 25px;
+      border: none;
+      outline: none;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+  }
+  @include lg {
+    .main {
+      margin: 0;
+      grid-template-columns: 1fr;
+    }
+    .order1 {
+      order: 2;
+      margin-top: 40px;
+    }
+    .img_container {
+      position: relative;
+      width: 220px !important;
+      height: 140px !important;
+      margin: 0 auto;
+    }
+    .img_container2 {
+      position: relative;
+      width: 300px !important;
+      height: 300px !important;
+      margin: 0 auto !important;
+    }
+    .mainTitle {
+      font-size: 24px !important;
+    }
+    .text {
+      font-size: 26px !important;
+      font-weight: 600 !important;
+      text-align: center !important;
+      margin: 0 auto !important;
+    }
+    .TVContainer {
+      text-align: center !important;
+      button {
+        margin-top: 100px;
+      }
+    }
+  }
+  @include sm {
+    .main {
+      padding: 120px 60px !important;
+    }
+    .text {
+      font-size: 26px !important;
+      font-weight: 600 !important;
+      text-align: center !important;
+      margin: 0 auto !important;
+      width: 100% !important;
+    }
+    .TVContainer {
+      text-align: center !important;
+      // border: 1px solid #ccc !important;
+      margin: 0;
+
+      button {
+        margin-top: 100px;
+        margin-bottom: 50px !important;
+      }
+    }
+  }
+}

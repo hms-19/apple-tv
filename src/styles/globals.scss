@@ -1,0 +1,14 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import "./variable.scss";
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: black;
+  font-family: "SF Pro Display";
+  box-sizing: border-box;
+}
+
+.link {
+  color: $link-color;
+}

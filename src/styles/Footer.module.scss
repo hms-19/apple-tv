@@ -1,0 +1,112 @@
+@import "./variable.scss";
+@import "./breakpoints.scss";
+
+.footer {
+    position: relative;
+    z-index: 500;
+    background-color: $footer-color;
+    padding: 40px 0;
+    ul {
+      list-style-type: decimal;
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0 230px;
+      li {
+        font-size: 13px;
+        color: #959599 !important;
+        margin-bottom: 11px;
+      }
+    }
+    .fitem {
+      max-width: 1024px;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding-top: 10px;
+      border-top: 1px solid #d2d2d7;
+  
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      .item_title {
+        font-size: 12px;
+        color: #1d1d1f;
+        font-weight: 600;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+      .breadcrumb {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 0;
+      }
+      i {
+        color: #6e6e73d9;
+      }
+      i:hover {
+        color: black;
+      }
+      .breadcrumb_link {
+        font-size: 12px;
+        color: #959599 !important;
+      }
+      ul li {
+        color: #959599 !important;
+      }
+    }
+  
+    .lfooter {
+      font-size: 12px;
+      color: #959599 !important;
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0 150px;
+      a {
+        color: $link-color;
+      }
+      .flexBox {
+        border-top: 1px solid #d2d2d7;
+  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        div {
+          a {
+            border-right: 1px solid #000;
+            padding: 0 10px;
+            color: #959599 !important;
+          }
+        }
+      }
+    }
+    @include lg {
+      padding: 0 20px !important;
+      ul,
+      .fitem,
+      .lfooter {
+        padding: 0 !important;
+      }
+      .fitem {
+        padding: 0 20px;
+        .grid {
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 20px;
+        }
+      }
+      .lfooter {
+        .flexBox {
+          flex-direction: column;
+          align-items: start;
+          div {
+            a:first-child {
+              padding: 0 10px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }

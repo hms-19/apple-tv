@@ -1,0 +1,48 @@
+@import "./variable.scss";
+@import "./breakpoints.scss";
+
+.intro_section {
+    position: absolute;
+    max-width: 1024px;
+    margin: 275px auto;
+    padding: 0 230px;
+    color: #fff;
+    z-index: 100;
+    h1 {
+      font-size: 72px;
+    }
+  
+    button {
+      font-size: 17px;
+      padding: 18px 32px;
+      border: none;
+      outline: none;
+      border-radius: 100px;
+      background: #fff;
+      font-weight: 500;
+      margin-top: -10px;
+    }
+  
+    .ad {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      margin-top: 80px;
+      div {
+        margin: 0 6px;
+      }
+    }
+    @include lg {
+      padding: 0 40px;
+      h1 {
+        font-size: 30px;
+        margin-top: -10px !important;
+      }
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
+  
+  
