@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/Navbar.module.scss";
-import { motion } from "framer-motion";
 import { IoCloseOutline } from "react-icons/io5";
 
 const Sidebar = ({ open, onChange }) => {
