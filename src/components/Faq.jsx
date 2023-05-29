@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "../styles/Faq.module.scss";
 
 import { GrUp, GrDown } from "react-icons/gr";
-import { motion } from "framer-motion";
 const Faq = ({ title, description }) => {
   const [open, setOpen] = useState(false);
   return (
